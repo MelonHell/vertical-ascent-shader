@@ -34,7 +34,7 @@ void main() {
 	int offset = int(round(guiSize.y - Position.y));
 	
 	// Detect if GUI text.
-	if (Position.z == 0.0) {
+	if (Color.a != 0.0) {
 		// Detect ascent of pixel.
 		if (offset > -130000 && offset <= -100000) {
 			int value = 100000;
